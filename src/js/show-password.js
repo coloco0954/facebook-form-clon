@@ -7,11 +7,11 @@ passwordInput?.addEventListener('keyup', function(){
 
         eyeImage?.addEventListener('click', function(){
             if(passwordInput.type == 'password'){
-                eyeImage.src = '/eye.svg';
                 passwordInput.type = 'text';
+                eyeImage.src = '/eye.svg';
             } else {
-                eyeImage.src = '/eye-slash.svg';
                 passwordInput.type = 'password';
+                eyeImage.src = '/eye-slash.svg';
             }
         })
     } else {
