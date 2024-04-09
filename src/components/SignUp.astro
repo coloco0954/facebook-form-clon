@@ -40,21 +40,21 @@ for(let i = 2024; i >= 1905; i--){;
             <select class="bg-transparent border border-[#dadee0] w-[120px] rounded-md py-2">
                 {
                     options.map(option =>{
-                        return <option value="${option}">{option}</option>
+                        return <option value={option}>{option}</option>
                     })
                 }
             </select>
             <select name="" id="" class="bg-transparent border border-[#dadee0] w-[120px] rounded-md py-2">
             {
                     months.map(month =>{
-                        return <option value="${month}">{month}</option>
+                        return <option value={month}>{month}</option>
                     })
                 }
             </select>
             <select name="" id="" class="bg-transparent border border-[#dadee0] w-[120px] rounded-md py-2">
                 {
                     years.map(year =>{
-                        return <option value="${year}">{year}</option>
+                        return <option value={year}>{year}</option>
                     })
                 }
             </select>
