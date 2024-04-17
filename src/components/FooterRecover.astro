@@ -1,0 +1,30 @@
+---
+const footerLanguageElements = ['Español', 'English (US)', 'Português (Brasil)', 'Français (France)', 'Italiano', 'Deutsch', 'عربية', '日本語', 'हिन्दी'];
+const footerElements = ['Registrarte', 'Iniciar sesión', 'Messenger', 'Facebook Lite', 'Video', 'Lugares', 'Juegos', 'Marketplace', 'Meta Pay', 'Meta Store', 'Meta Quest', 'Imagina con Meta AI', 'Instagram', 'Threads', 'Recaudaciones de fondos', 'Servicios', 'Centro de información de votación', 'Política de privacidad', 'Centro de privacidad', 'Configuración de cookies', 'Grupos', 'Información', 'Crear anuncio', 'Crear página', 'Desarrolladores', 'Empleo', 'Cookies', 'Configuración de cookies', 'Opciones de anuncios', 'Condiciones', 'Ayuda', 'Subir contactos y no usuarios'];
+---
+
+<footer class="bg-[#fefeff] mt-[90px] pt-[200px] pb-[20px]">
+    <div class="flex gap-x-5 mx-[150px]">
+        {
+            footerLanguageElements.map(language =>{
+                return <a href="" class="text-zinc-500 text-[13px]">{language}</a>
+            })
+        }
+
+        <div class="-mt-[4px]">
+            <button class="bg-gray-200 text-[20px] text-zinc-700 border border-gray-300 h-5 w-9 rounded-sm hover:bg-gray-300"><p class="-mt-[7px]">+</p></button>
+        </div>
+    </div>
+
+    <div class="w-[1000px] h-[1px] bg-zinc-300 mx-[150px] my-2"></div>
+
+    <div class="flex mx-[150px] flex-wrap gap-x-5">
+        {
+            footerElements.map(element =>{
+                return <a href="" class="text-neutral-400 hover:underline text-[12.5px] mb-2 leading-tight">{element}</a>
+            })
+        }
+    </div>
+
+    <p class="mx-[150px] text-[12px] text-neutral-400">Meta © 2024</p>
+</footer>
